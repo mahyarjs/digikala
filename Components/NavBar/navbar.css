@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav-bar {
+    margin-top: 150px;
+    display: none;
+    position: fixed;
+    background: white;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: 1px solid #adadad;
+}
+.nav-bar ul {
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width : 1100px) {
+    .nav-bar {
+        display: block;
+    }
+}

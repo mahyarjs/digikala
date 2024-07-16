@@ -1,0 +1,48 @@
+fetch("https://api.digikala.com/v1/categories/apparel/")
+    .then(res=>res.json())
+    .then(json=>{
+        console.log(json.data.best_selling_products.products[10].properties.min_price_in_last_month)
+        img.src = json.data.best_selling_products.products[10].images.main.url[0]
+    })
+
+https://gist.github.com/mostafa-kianfard/dd878ccfe72c67f35bd86e28679aac4f
+
+
+
+
+
+
+
+Amazing ===
+pric
+
+json.data.incredible_offers.products[12].properties.min_price_in_last_month
+
+
+img
+
+json.data.incredible_offers.products[6].images.main.url[0]
+
+
+desc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                this.shadowRoot.querySelector('#product-img').src = json.data.best_selling_products.products[15].images.main.url[0]
+
+                this.shadowRoot.querySelector('#price').innerHTML = json.data.incredible_offers.products[15].properties.min_price_in_last_month
+                this.shadowRoot.querySelector('#desc').innerHTML = json.data.incredible_offers.products[15].data_layer.category

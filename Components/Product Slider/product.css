@@ -1,0 +1,157 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/chevron-left.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/arrow-left.css');
+.container {
+    margin-top: 40px;
+}
+.container ul {
+    margin: auto;
+    border-radius: 20px;
+    background: #e53945;
+    width: 76%;
+    height: 300px;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+a , img , p , span{
+    user-select: none;
+}
+ul {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+}
+ul::-webkit-scrollbar {
+    display: none;
+}
+.static a {
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container ul li a img {
+    width: 100px;
+}
+.container ul li a  {
+    text-decoration: none;
+}
+.container ul li {
+    list-style: none;
+}
+.discount-logo {
+    font-size: 100px;
+    font-family: sans-serif;
+}
+.container ul li a .timer{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.timer div {
+    background: white;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 2px;
+}
+.product {
+    background: white;
+    width: 170px;
+    text-align: center;
+
+
+}
+.product a {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px 30px 10px;
+
+}
+.product a img {
+    text-align: center;
+}
+.product-c  {
+    display: flex;
+    gap: 10px;
+}
+.product-c  li:first-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.product-c  li:last-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#desc {
+    text-align: right;
+    color: gray;
+    font-size: 13px;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+.discount {
+    background: #e53945;
+    color: white;
+    height: 20px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.see-all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 90px;
+}
+.see {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#price span {
+    font-size: 11px;
+    color: gray;
+}
+#price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width :1000px) {
+    .container ul {
+        width: 100%;
+    }
+}

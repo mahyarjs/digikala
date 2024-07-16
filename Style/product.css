@@ -1,0 +1,53 @@
+@font-face {
+    font-family: yekan;
+    src: url(/Font/yekan-font/Yekan.woff);
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background: #f1f1f1;
+    overflow-x: hidden;
+
+}
+* {
+    
+    font-family: yekan , sans-serif;
+}
+site-mobile-header {
+    display: none;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 15px;
+    background-color: lightgrey;
+    
+  }
+  ::-webkit-scrollbar-thumb {
+  
+    background-color: #ef4056;
+  
+  }
+site-modal {
+    display: none;
+}
+
+@media screen and (max-width : 1100px) {
+    site-mobile-header {
+        display: flex;
+    }
+    site-header {
+        display: none;
+    }
+    body {
+        padding-bottom: 610px;
+    }
+    site-footer {
+        display: none;
+    }
+    site-product-icon {
+        position: relative;
+        top: 470px;
+        
+    }
+}
